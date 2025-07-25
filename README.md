@@ -11,7 +11,7 @@ A content-based movie recommender system using TF-IDF and cosine similarity. Bui
 ## 📦 Example
 
 ```python
-from src.recommender import MovieRecommendationSystem
+from src.movies import MovieRecommendationSystem
 
 recommender = MovieRecommendationSystem("data/tmdb_5000_movies.csv", "data/tmdb_5000_credits.csv")
 recommendations = recommender.recommend("Avatar")
@@ -22,7 +22,7 @@ for movie in recommendations:
 
 ## 📁 Files
 
-- `src/recommender.py` — main class
+- `src/movies.py` — main class
 - `notebook/demo.ipynb` — demo notebook
 - `data/` — contains dataset CSVs (or provide a link instead)
 - `requirements.txt` — required libraries
