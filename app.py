@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from src.recommender import MovieRecommendationSystem
+from src.movies import MovieRecommendationSystem
 
 # App config
 st.set_page_config(page_title="Movie Recommender", page_icon="🎬", layout="centered")
@@ -31,7 +31,7 @@ top_n = st.slider("Number of recommendations:", min_value=3, max_value=10, value
 # Recommend button
 if st.button("🎯 Recommend Movies"):
     with st.spinner("Finding similar movies..."):
-        result = recommender.recommend(movie_input, num_recommendations=top_n)
+        result = recommender.get_recommendations(movie_input, num_recommendations=top_n)
 
         if "error" in result:
             st.error(result["error"])
