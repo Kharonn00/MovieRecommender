@@ -24,7 +24,7 @@ for movie in recommendations:
 
 - `src/movies.py` — main class
 - `notebook/demo.ipynb` — demo notebook
-- `data/` — contains dataset CSVs (or provide a link instead)
+- `data/` — contains dataset CSVs ([Dataset Link](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?resource=download))
 - `requirements.txt` — required libraries
 
 ## 🧪 Sample Output
